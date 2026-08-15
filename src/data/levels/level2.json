@@ -1,0 +1,163 @@
+{
+  "levelNumber": 2,
+  "levelTitle": "The Shadow Benefactor",
+  "victimName": "Maya Lin",
+  "deviceTimestamp": "12:15 AM",
+  "batteryPercentage": 74,
+  "objective": "Crack the Recently Deleted PIN using banking transaction dates, inspect the deleted audio note, and accuse the mastermind.",
+  "contacts": [
+    {
+      "id": "julian_vance",
+      "name": "Julian Vance",
+      "phone": "+1 (555) 099-0012",
+      "relation": "CEO, Vance Holdings"
+    },
+    {
+      "id": "councilor_moran",
+      "name": "Councilor Moran",
+      "phone": "+1 (555) 041-8722",
+      "relation": "City District Representative"
+    }
+  ],
+  "chats": [
+    {
+      "contactId": "councilor_moran",
+      "isPinned": false,
+      "messages": [
+        {
+          "id": "m201",
+          "senderId": "councilor_moran",
+          "timestamp": "Yesterday, 4:10 PM",
+          "text": "Ms. Lin, if you run that story about the rezoning bribes, both of our careers are over."
+        },
+        {
+          "id": "m202",
+          "senderId": "user",
+          "timestamp": "Yesterday, 4:15 PM",
+          "text": "The public deserves the truth, Councilor. I have the wire receipts."
+        }
+      ]
+    }
+  ],
+  "gallery": {
+    "albums": [
+      { "id": "recents", "name": "Recents", "photoIds": ["p101"] },
+      { "id": "deleted", "name": "Recently Deleted", "photoIds": ["p102", "p103"] }
+    ],
+    "photos": [
+      {
+        "id": "p101",
+        "thumbnailUrl": "/assets/photos/vance_tower.webp",
+        "fullUrl": "/assets/photos/vance_tower.webp",
+        "caption": "Vance Corp HQ Stakeout",
+        "exif": {
+          "dateTime": "Oct 12, 2026 2:15 PM",
+          "camera": "Sony Alpha 7 IV",
+          "locationName": "Vance Financial Tower",
+          "coordinates": "42.3580° N, 71.0550° W",
+          "iso": "100"
+        }
+      },
+      {
+        "id": "p102",
+        "thumbnailUrl": "/assets/photos/wire_transfer_thumb.webp",
+        "fullUrl": "/assets/photos/wire_transfer_doc.webp",
+        "caption": "Offshore Cayman Transfer Slip",
+        "exif": {
+          "dateTime": "Oct 13, 2026 6:45 PM",
+          "camera": "Document Scanner Pro",
+          "locationName": "Encrypted Cloud Cache",
+          "coordinates": "42.3601° N, 71.0589° W",
+          "iso": "200"
+        },
+        "clueId": "clue_wire_slip"
+      },
+      {
+        "id": "p103",
+        "thumbnailUrl": "/assets/photos/pier_cctv.webp",
+        "fullUrl": "/assets/photos/pier_cctv.webp",
+        "caption": "Pier 42 Security Camera Feed Grab",
+        "exif": {
+          "dateTime": "Oct 14, 2026 11:35 PM",
+          "camera": "Harbor Security Cam #9",
+          "locationName": "Pier 42 Gate B",
+          "coordinates": "42.3550° N, 71.0480° W",
+          "iso": "3200"
+        },
+        "clueId": "clue_vance_security_car"
+      }
+    ],
+    "recentlyDeletedLocked": true,
+    "recentlyDeletedPasscode": "0915"
+  },
+  "notes": [
+    {
+      "id": "note_clue_hint",
+      "title": "Deleted Album Security",
+      "lastEdited": "Oct 10, 2026, 9:00 AM",
+      "content": "Reset the deleted album PIN to the MM/DD date of the first recurring Helios shell deposit from my statements.",
+      "isLocked": false
+    }
+  ],
+  "banking": {
+    "accountHolder": "Maya Lin (Forensic Wire Log Mirror)",
+    "currentBalance": 128450.00,
+    "transactions": [
+      {
+        "id": "t101",
+        "date": "Sep 15, 2026",
+        "merchant": "Helios Holdings Offshore",
+        "category": "deposit",
+        "amount": 25000.00,
+        "accountNumberMasked": "•••• 4410",
+        "note": "Wire Reference: JV-KICKBACK-REZONE",
+        "clueId": "clue_helios_deposit"
+      },
+      {
+        "id": "t102",
+        "date": "Oct 01, 2026",
+        "merchant": "Helios Holdings Offshore",
+        "category": "deposit",
+        "amount": 25000.00,
+        "accountNumberMasked": "•••• 4410",
+        "note": "Wire Reference: JV-KICKBACK-REZONE"
+      }
+    ]
+  },
+  "voicemails": [
+    {
+      "id": "vm201",
+      "callerId": "julian_vance",
+      "timestamp": "Oct 14, 10:00 PM",
+      "durationSeconds": 45,
+      "audioUrl": "/assets/audio/vance_threat.mp3",
+      "transcript": "Maya, you've made a very expensive mistake poking into my harbor redevelopment zoning. My head of security is already on his way to resolve this permanently.",
+      "clueId": "clue_vance_confession"
+    }
+  ],
+  "rideHistory": [],
+  "clues": [
+    {
+      "id": "clue_helios_deposit",
+      "title": "Helios Shell Date",
+      "sourceApp": "banking",
+      "description": "First offshore wire deposit of $25,000 arrived on Sep 15 (09/15)."
+    },
+    {
+      "id": "clue_vance_security_car",
+      "title": "CCTV Harbor Frame",
+      "sourceApp": "gallery",
+      "description": "Pier 42 camera feed at 11:35 PM captures Julian Vance's security vehicle idling near Gate B."
+    },
+    {
+      "id": "clue_vance_confession",
+      "title": "Recorded Threat Call",
+      "sourceApp": "voicemail",
+      "description": "Julian Vance left a voicemail ordering his security team to silence Maya."
+    }
+  ],
+  "completionTrigger": {
+    "type": "accuse_suspect",
+    "targetId": "julian_vance"
+  }
+}

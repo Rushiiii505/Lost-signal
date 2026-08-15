@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  input, textarea {
+    user-select: text;
+    -webkit-user-select: text;
+  }
+
+  body {
+    background-color: #06070a;
+    color: #f3f4f6;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "SF Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Authentic iOS 18 Continuous Curvature Squircle */
+.ios-squircle {
+  border-radius: 22.5%;
+}
+
+.ios-glass-dock {
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(40px) saturate(180%);
+  -webkit-backdrop-filter: blur(40px) saturate(180%);
+  border: 0.5px solid rgba(255, 255, 255, 0.25);
+}
+
+.ios-glass-card {
+  background: rgba(28, 28, 30, 0.85);
+  backdrop-filter: blur(30px) saturate(190%);
+  -webkit-backdrop-filter: blur(30px) saturate(190%);
+  border: 0.5px solid rgba(255, 255, 255, 0.12);
+}
+
+.ios-control-tile {
+  background: rgba(44, 44, 46, 0.75);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Custom modern scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Phone Screen Glare / Reflection */
+.phone-glare {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.01) 35%,
+    transparent 55%
+  );
+  pointer-events: none;
+}
+
+.shadow-phone-case {
+  box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.85), 0 0 50px 2px rgba(0, 0, 0, 0.5);
+}

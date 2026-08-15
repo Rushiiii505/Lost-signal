@@ -1,0 +1,209 @@
+{
+  "levelNumber": 1,
+  "levelTitle": "The Midnight Drop",
+  "victimName": "Maya Lin",
+  "deviceTimestamp": "11:42 PM",
+  "batteryPercentage": 89,
+  "objective": "Reconstruct Maya's final movements, track down the meeting location, and decipher her encrypted Safe House note.",
+  "contacts": [
+    {
+      "id": "mark_editor",
+      "name": "Mark (Tribune Editor)",
+      "phone": "+1 (555) 019-2834",
+      "relation": "Editor-in-Chief"
+    },
+    {
+      "id": "viper_source",
+      "name": "Viper (Source)",
+      "phone": "+1 (555) 012-9981",
+      "relation": "Confidential Whistleblower"
+    },
+    {
+      "id": "sarah_roommate",
+      "name": "Sarah Roommate",
+      "phone": "+1 (555) 014-4321",
+      "relation": "Friend"
+    }
+  ],
+  "chats": [
+    {
+      "contactId": "viper_source",
+      "isPinned": true,
+      "messages": [
+        {
+          "id": "m1",
+          "senderId": "viper_source",
+          "timestamp": "10:50 PM",
+          "text": "The flash drive is stashed in the locker as promised. Don't be late."
+        },
+        {
+          "id": "m2",
+          "senderId": "user",
+          "timestamp": "10:52 PM",
+          "text": "Send me visual confirmation of the unit key."
+        },
+        {
+          "id": "m3",
+          "senderId": "viper_source",
+          "timestamp": "10:55 PM",
+          "mediaType": "image",
+          "mediaUrl": "/assets/photos/locker_key.webp",
+          "clueId": "clue_key_photo"
+        },
+        {
+          "id": "m4",
+          "senderId": "viper_source",
+          "timestamp": "10:56 PM",
+          "text": "Meet me at Pier 42 to get the Master Code. Come alone."
+        }
+      ]
+    },
+    {
+      "contactId": "sarah_roommate",
+      "isPinned": false,
+      "messages": [
+        {
+          "id": "m5",
+          "senderId": "sarah_roommate",
+          "timestamp": "9:15 PM",
+          "text": "Hey Maya! Are we still on for vintage shopping tomorrow? Remember we founded Retro Archives back in 2021!"
+        },
+        {
+          "id": "m6",
+          "senderId": "user",
+          "timestamp": "9:20 PM",
+          "text": "Totally! Let's hit the market at noon."
+        }
+      ]
+    }
+  ],
+  "gallery": {
+    "albums": [
+      { "id": "recents", "name": "Recents", "photoIds": ["p1", "p2"] }
+    ],
+    "photos": [
+      {
+        "id": "p1",
+        "thumbnailUrl": "/assets/photos/locker_key_thumb.webp",
+        "fullUrl": "/assets/photos/locker_key.webp",
+        "caption": "Storage Unit 404 Key",
+        "exif": {
+          "dateTime": "Oct 14, 2026 10:53 PM",
+          "camera": "Sony Alpha 7 IV",
+          "locationName": "North Harbor Storage, 4th Ave",
+          "coordinates": "42.3601° N, 71.0589° W",
+          "iso": "800"
+        },
+        "clueId": "clue_storage_location"
+      },
+      {
+        "id": "p2",
+        "thumbnailUrl": "/assets/photos/shipyard_dock.webp",
+        "fullUrl": "/assets/photos/shipyard_dock.webp",
+        "caption": "Night shot Pier 42",
+        "exif": {
+          "dateTime": "Oct 14, 2026 11:20 PM",
+          "camera": "iPhone 15 Pro",
+          "locationName": "Pier 42 Maritime Terminal",
+          "coordinates": "42.3550° N, 71.0480° W",
+          "iso": "1600"
+        }
+      }
+    ],
+    "recentlyDeletedLocked": false
+  },
+  "notes": [
+    {
+      "id": "note_safehouse",
+      "title": "Safe House - Dossier Backup",
+      "lastEdited": "Oct 14, 2026, 11:05 PM",
+      "content": "CONFIDENTIAL DOSSIER: Julian Vance Kickback Network.\nDocuments secured in North Harbor Unit #404.\nAccess requires Master Decryption Pin: 8841-B.",
+      "isLocked": true,
+      "passcode": "2021TX9",
+      "passcodeHint": "Year Retro Archives founded (4 digits) + Viper's cab plate prefix (3 chars)",
+      "clueId": "clue_dossier_unlocked"
+    },
+    {
+      "id": "note_groceries",
+      "title": "Weekly Checklist",
+      "lastEdited": "Oct 13, 2026, 3:12 PM",
+      "content": "- Buy film stock\n- Send invoice to Mark\n- Clean camera lenses",
+      "isLocked": false
+    }
+  ],
+  "banking": {
+    "accountHolder": "Maya Lin",
+    "currentBalance": 3420.50,
+    "transactions": [
+      {
+        "id": "t1",
+        "date": "Oct 14, 11:30 PM",
+        "merchant": "QuickRide Services",
+        "category": "transport",
+        "amount": -24.50,
+        "accountNumberMasked": "•••• 9012"
+      },
+      {
+        "id": "t2",
+        "date": "Oct 14, 8:40 PM",
+        "merchant": "Corner Espresso Bar",
+        "category": "food",
+        "amount": -6.25,
+        "accountNumberMasked": "•••• 9012"
+      }
+    ]
+  },
+  "voicemails": [
+    {
+      "id": "vm1",
+      "callerId": "mark_editor",
+      "timestamp": "11:15 PM",
+      "durationSeconds": 28,
+      "audioUrl": "/assets/audio/mark_voicemail.mp3",
+      "transcript": "Maya, pick up! Do NOT meet Viper tonight. We ran his plates—he's not a whistleblower, he works private security for Vance. It's an ambush! Call me immediately.",
+      "clueId": "clue_editor_warning"
+    }
+  ],
+  "rideHistory": [
+    {
+      "id": "ride_1",
+      "timestamp": "11:28 PM",
+      "pickup": "742 Evergreen St",
+      "dropoff": "Pier 42 Maritime Terminal",
+      "driverName": "Derrick S.",
+      "licensePlate": "TX9-882",
+      "vehicleModel": "Silver Toyota Camry",
+      "clueId": "clue_cab_plate"
+    }
+  ],
+  "clues": [
+    {
+      "id": "clue_editor_warning",
+      "title": "Editor's Warning",
+      "sourceApp": "voicemail",
+      "description": "Mark warned Maya at 11:15 PM that 'Viper' is an undercover enforcer working for Vance."
+    },
+    {
+      "id": "clue_storage_location",
+      "title": "Storage Unit EXIF Tag",
+      "sourceApp": "gallery",
+      "description": "The locker key image coordinates point directly to North Harbor Storage on 4th Ave."
+    },
+    {
+      "id": "clue_cab_plate",
+      "title": "RideShare Plate Code",
+      "sourceApp": "rideshare",
+      "description": "Maya's midnight ride to Pier 42 had vehicle plate TX9-882."
+    },
+    {
+      "id": "clue_dossier_unlocked",
+      "title": "Dossier Location Discovered",
+      "sourceApp": "notes",
+      "description": "Decrypted Safe House note gives Unit #404 and Master Decryption Pin 8841-B."
+    }
+  ],
+  "completionTrigger": {
+    "type": "unlock_note",
+    "targetId": "note_safehouse"
+  }
+}

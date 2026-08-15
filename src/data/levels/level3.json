@@ -1,0 +1,208 @@
+{
+  "levelNumber": 3,
+  "levelTitle": "Infidelity & Blackmail",
+  "victimName": "Liam Thorne (Hedge Fund VP)",
+  "deviceTimestamp": "09:30 PM",
+  "batteryPercentage": 68,
+  "objective": "Inspect Liam's device to uncover his secret affair, find proof of the hidden offshore hotel suite, decrypt his 'Alibis' note, and expose the blackmail scheme.",
+  "contacts": [
+    {
+      "id": "evelyn_wife",
+      "name": "Evelyn (Wife)",
+      "phone": "+1 (555) 302-8819",
+      "relation": "Spouse"
+    },
+    {
+      "id": "coach_dave_secret",
+      "name": "Coach Dave (Burner)",
+      "phone": "+1 (555) 771-0024",
+      "relation": "Cover Identity (Chloe V.)"
+    },
+    {
+      "id": "marcus_partner",
+      "name": "Marcus (Partner)",
+      "phone": "+1 (555) 883-9912",
+      "relation": "Managing Director"
+    }
+  ],
+  "chats": [
+    {
+      "contactId": "coach_dave_secret",
+      "isPinned": true,
+      "messages": [
+        {
+          "id": "c1",
+          "senderId": "coach_dave_secret",
+          "timestamp": "8:15 PM",
+          "text": "Did you book Suite #1402 at The St. Regis for this weekend?"
+        },
+        {
+          "id": "c2",
+          "senderId": "user",
+          "timestamp": "8:20 PM",
+          "text": "Already done under my alias. Evelyn thinks I'm attending the Chicago financial summit."
+        },
+        {
+          "id": "c3",
+          "senderId": "coach_dave_secret",
+          "timestamp": "8:22 PM",
+          "mediaType": "image",
+          "mediaUrl": "/assets/photos/yacht_miami.webp",
+          "clueId": "clue_yacht_photo"
+        },
+        {
+          "id": "c4",
+          "senderId": "coach_dave_secret",
+          "timestamp": "8:25 PM",
+          "text": "Don't forget the Cartier bracelet you promised me. If Evelyn finds out, it's 50% of your fund."
+        }
+      ]
+    },
+    {
+      "contactId": "evelyn_wife",
+      "isPinned": false,
+      "messages": [
+        {
+          "id": "c5",
+          "senderId": "evelyn_wife",
+          "timestamp": "7:40 PM",
+          "text": "Liam, did you see the $4,500 charge on the Amex? What was that for?"
+        },
+        {
+          "id": "c6",
+          "senderId": "user",
+          "timestamp": "7:45 PM",
+          "text": "Just client dinner expenses in Midtown, honey. I'll expense it back to the firm."
+        }
+      ]
+    }
+  ],
+  "gallery": {
+    "albums": [
+      { "id": "recents", "name": "Recents", "photoIds": ["p301"] },
+      { "id": "deleted", "name": "Recently Deleted", "photoIds": ["p302"] }
+    ],
+    "photos": [
+      {
+        "id": "p301",
+        "thumbnailUrl": "/assets/photos/yacht_miami.webp",
+        "fullUrl": "/assets/photos/yacht_miami.webp",
+        "caption": "Miami Beach Marina - Yacht Charter",
+        "exif": {
+          "dateTime": "Sep 28, 2026 4:15 PM",
+          "camera": "iPhone 16 Pro Max",
+          "locationName": "Biscayne Bay Marina, Slip 42",
+          "coordinates": "25.7617° N, 80.1918° W",
+          "iso": "100"
+        },
+        "clueId": "clue_miami_exif"
+      },
+      {
+        "id": "p302",
+        "thumbnailUrl": "/assets/photos/cartier_receipt.webp",
+        "fullUrl": "/assets/photos/cartier_receipt.webp",
+        "caption": "Cartier Diamond Bangle Invoice",
+        "exif": {
+          "dateTime": "Oct 12, 2026 3:30 PM",
+          "camera": "Document Scanner",
+          "locationName": "Cartier 5th Avenue Flagship",
+          "coordinates": "40.7589° N, 73.9787° W",
+          "iso": "200"
+        },
+        "clueId": "clue_cartier_doc"
+      }
+    ],
+    "recentlyDeletedLocked": true,
+    "recentlyDeletedPasscode": "4500"
+  },
+  "notes": [
+    {
+      "id": "note_alibis",
+      "title": "Alibis & Offshore Vault Pin",
+      "lastEdited": "Oct 14, 2026, 9:00 PM",
+      "content": "CONFIDENTIAL EMBEZZLEMENT LOG:\n$420,000 diverted from Thorne Capital to Zurich Account #8991.\nSt. Regis Suite #1402 booked for Chloe under alias 'David Vance'.",
+      "isLocked": true,
+      "passcode": "45001402",
+      "passcodeHint": "Cartier charge amount ($4500) + St. Regis Suite number (1402) -> 45001402",
+      "clueId": "clue_alibis_decrypted"
+    }
+  ],
+  "banking": {
+    "accountHolder": "Liam Thorne (Personal Platinum)",
+    "currentBalance": 84200.00,
+    "transactions": [
+      {
+        "id": "t301",
+        "date": "Oct 12, 3:30 PM",
+        "merchant": "Cartier New York 5th Ave",
+        "category": "shopping",
+        "amount": -4500.00,
+        "accountNumberMasked": "•••• 7741",
+        "note": "Love Bracelet - Rose Gold",
+        "clueId": "clue_cartier_charge"
+      },
+      {
+        "id": "t302",
+        "date": "Oct 14, 8:00 PM",
+        "merchant": "The St. Regis Luxury Suites",
+        "category": "food",
+        "amount": -1402.00,
+        "accountNumberMasked": "•••• 7741",
+        "note": "Suite 1402 Booking Deposit"
+      }
+    ]
+  },
+  "voicemails": [
+    {
+      "id": "vm301",
+      "callerId": "coach_dave_secret",
+      "timestamp": "8:30 PM",
+      "durationSeconds": 32,
+      "audioUrl": "/assets/audio/chloe_voicemail.mp3",
+      "transcript": "Liam, it's Chloe. I saw Evelyn's Instagram story in the Hamptons. You have until Friday to transfer the $200,000 or I send the Miami yacht photos and receipts directly to her divorce attorney.",
+      "clueId": "clue_blackmail_voicemail"
+    }
+  ],
+  "rideHistory": [
+    {
+      "id": "ride_301",
+      "timestamp": "11:45 PM",
+      "pickup": "Thorne Capital Tower",
+      "dropoff": "The St. Regis Hotel (5th Ave)",
+      "driverName": "Jean-Pierre",
+      "licensePlate": "LUX-990",
+      "vehicleModel": "Black Cadillac Escalade",
+      "clueId": "clue_stregis_ride"
+    }
+  ],
+  "clues": [
+    {
+      "id": "clue_yacht_photo",
+      "title": "Secret Yacht Photo",
+      "sourceApp": "chat",
+      "description": "Chloe sent a photo from their secret Miami yacht trip while Liam told his wife he was at a conference."
+    },
+    {
+      "id": "clue_cartier_charge",
+      "title": "$4,500 Jewelry Bribe",
+      "sourceApp": "banking",
+      "description": "Amex statement shows $4,500 spent at Cartier for Chloe."
+    },
+    {
+      "id": "clue_alibis_decrypted",
+      "title": "Embezzlement & Suite 1402 Log",
+      "sourceApp": "notes",
+      "description": "Decrypted Alibis note confirms $420,000 embezzlement and St. Regis Suite #1402."
+    },
+    {
+      "id": "clue_blackmail_voicemail",
+      "title": "Blackmail Threat Call",
+      "sourceApp": "voicemail",
+      "description": "Chloe demands $200,000 wire or she exposes everything to Evelyn's divorce attorneys."
+    }
+  ],
+  "completionTrigger": {
+    "type": "accuse_suspect",
+    "targetId": "coach_dave_secret"
+  }
+}
