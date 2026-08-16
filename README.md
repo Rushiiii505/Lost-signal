@@ -22,7 +22,6 @@
 
 ## 🌟 Key Highlights
 
-- **🍎 Apple Keynote Landing Page**: Apple product launch-style case directory with filter pills (*Homicide*, *Conspiracy*, *Infidelity*), victim bios, difficulty ratings, and instant device boot triggers.
 - **📱 1:1 Authentic Mobile OS Shell**: Continuous-curvature squircles (`rounded-[22%]`), frosted glass dock, iOS 18 stencil clock, dynamic TrueDepth Island, and native pull-down Control Center.
 - **🗺️ True EXIF Geotagging**: Raw camera parameters (aperture, shutter speed, ISO, focal length, resolution) and interactive Apple Maps location pinpoint extraction.
 - **🔊 Procedural Web Audio Engine**: Zero-dependency synthesizer generating authentic DTMF dialer tones, camera shutter acoustics, lock clicks, and real-time voice memo waveform visualizers.
